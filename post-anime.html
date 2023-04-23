@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/posts.css">
+
+  <!-- JQUERY -->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js' type='text/javascript'></script>
+
+  <script type='text/javascript'>
+    (function($) {
+      $(document).ready(function(){
+        $('ul.xo-tab-links li').click(function(){
+          var tab_id = $(this).attr('data-tab');
+
+          // Make the old tab inactive.
+          $('ul.xo-tab-links li').removeClass('current');
+          $('.xo-tab-content').removeClass('current');
+
+          // Make the clicked tab active.
+          $(this).addClass('current');
+          $("#"+tab_id).addClass('current');
+        })
+      })
+    })(jQuery);
+  </script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+<div class="header">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <div class="logo-image">
+          <img src="https://3.bp.blogspot.com/-MvKE9gYa4FQ/X0BlAp7-_BI/AAAAAAAAA48/SOWftgfOF2Esij_TnEog5TyeXUdzFsJ0wCK4BGAYYCw/s1600/Untitled-1.png" class="img-fluid">
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Acasa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="list-anime.html">Lista Anime</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Echipa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contactati-ne</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="welcome-text">
+    <h1>Bun venit!</h1>
+    <p>Vizionează orice anime dorești cu subtitrare în limba română!</p>
+  </div>
+  <div class="search-container">
+    <form action="#">
+      <div class="search-container">
+        <input type="text" placeholder="Cauta un anime...">
+        <button type="submit">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </form>
+
+  </div>
+</div>
+<div class="container">
+  <h2 class="section-title">Jigokuraku - Episodul 4 </h2>
+  <div class="xo-tabs">
+
+    <ul class="xo-tab-links">
+      <li class="current" data-tab="tab1">Sendvid</li>
+      <li data-tab="tab2">Mp4Upload</li>
+      <li data-tab="tab3">Google Drive</li>
+      <li data-tab="tab4">Doio</li>
+    </ul>
+
+    <div id="tab1" class="xo-tab-content current">
+      <iframe allowfullscreen="true" frameborder="0" height="600" marginheight="0" marginwidth="0" scrolling="no" src="//sendvid.com/embed/ahjzyff0" width="1250"></iframe>
+    </div>
+    <div class="xo-tab-content" id="tab2">
+      <iframe allowfullscreen="true" frameborder="0" height="600" marginheight="0" marginwidth="0" scrolling="no" src="//sendvid.com/embed/ahjzyff0" width="1250"></iframe>
+    </div>
+    <div class="xo-tab-content" id="tab3">
+      <iframe allowfullscreen="true" frameborder="0" height="600" marginheight="0" marginwidth="0" scrolling="no" src="https://lvturbo.com/e/hazkkugb287f.html" width="1250"></iframe>
+    </div>
+    <div class="xo-tab-content" id="tab4">
+      <iframe allowfullscreen="true" frameborder="0" height="600" marginheight="0" marginwidth="0" scrolling="no" src="https://streamtape.com/e/do1AdKrVWMSkO7V/" width="1250"></iframe>
+    </div>
+
+  </div><!-- xo-tabs -->
+  <div class="episode-buttons">
+    <button class="button-prev"><i class="fa fa-chevron-left"></i> Episodul anterior</button>
+    <button class="button-all">Toate episoadele</button>
+    <button class="button-next">Următorul episod <i class="fa fa-chevron-right"></i></button>
+    <button class="button-like" id="like-count"><i class="fa fa-heart"></i> 0</button>
+  </div>
+
+  <br>
+  <h2 class="section-title">Episod oferit de: </h2>
+  <div class="contributor-block">
+    <div class="contributor">
+      <div class="contributor-img">
+        <img src="https://cdnb.artstation.com/p/assets/images/images/041/540/441/large/tr-n-thien-d-vu-799eb5de-173a-4c07-98a1-a585e9fe042f.jpg?1631985985" alt="Traducător">
+      </div>
+      <div class="contributor-info">
+        <h3>RomanianNinja</h3>
+        <p>Traducător</p>
+      </div>
+    </div>
+
+    <div class="contributor">
+      <div class="contributor-img">
+        <img src="https://cdnb.artstation.com/p/assets/images/images/041/540/441/large/tr-n-thien-d-vu-799eb5de-173a-4c07-98a1-a585e9fe042f.jpg?1631985985" alt="Verificator">
+      </div>
+      <div class="contributor-info">
+        <h3>RomanianNinja</h3>
+        <p>Verificator</p>
+      </div>
+    </div>
+
+    <div class="contributor">
+      <div class="contributor-img">
+        <img src="https://cdnb.artstation.com/p/assets/images/images/041/540/441/large/tr-n-thien-d-vu-799eb5de-173a-4c07-98a1-a585e9fe042f.jpg?1631985985" alt="Encoder">
+      </div>
+      <div class="contributor-info">
+        <h3>RomanianNinja</h3>
+        <p>Encoder</p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h2 class="section-title">Comentarii: </h2>
+  <div class="episode-comments">
+    <div class="comment">
+      <div class="comment-avatar">
+        <img src="https://cdnb.artstation.com/p/assets/images/images/041/540/441/large/tr-n-thien-d-vu-799eb5de-173a-4c07-98a1-a585e9fe042f.jpg?1631985985" alt="Avatar utilizator">
+      </div>
+      <div class="comment-content">
+        <div class="comment-header">
+          <h3 class="comment-username">RomanianNinja</h3>
+          <p class="comment-timestamp">acum 2 minute</p>
+        </div>
+        <p class="comment-text">A fost un episod grozav! Am iubit acțiunea și personajele.</p>
+      </div>
+    </div>
+
+    <div class="comment">
+      <div class="comment-avatar">
+        <img src="https://cdnb.artstation.com/p/assets/images/images/041/540/441/large/tr-n-thien-d-vu-799eb5de-173a-4c07-98a1-a585e9fe042f.jpg?1631985985" alt="Avatar utilizator">
+      </div>
+      <div class="comment-content">
+        <div class="comment-header">
+          <h3 class="comment-username">Dumy</h3>
+          <p class="comment-timestamp">acum 5 minute</p>
+        </div>
+        <p class="comment-text">Nu am fost prea impresionat de acest episod. Aștept cu nerăbdare să văd ce se întâmplă în continuare, dar a fost un pic dezamăgitor.</p>
+      </div>
+    </div>
+
+    <div class="comment">
+      <div class="comment-avatar">
+        <img src="https://cdnb.artstation.com/p/assets/images/images/041/540/441/large/tr-n-thien-d-vu-799eb5de-173a-4c07-98a1-a585e9fe042f.jpg?1631985985" alt="Avatar utilizator">
+      </div>
+      <div class="comment-content">
+        <div class="comment-header">
+          <h3 class="comment-username">Deus21</h3>
+          <p class="comment-timestamp">acum 10 minute</p>
+        </div>
+        <p class="comment-text">Sunt atât de încântat de această serie! Acest episod a fost excelent, iar animația a fost minunată.</p>
+      </div>
+    </div>
+
+    <div class="comment-form">
+      <h3>Postează un comentariu</h3>
+      <form action="#" method="post">
+        <label for="username">Nume utilizator:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="comment">Comentariu:</label>
+        <textarea id="comment" name="comment" required></textarea>
+        <button type="submit">Postează</button>
+      </form>
+    </div>
+  </div>
+
+
+</div>
+<br>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p>&copy; 2023 AnimeAZU.</p>
+      </div>
+      <div class="col-md-6 text-md-right">
+        <ul class="footer-links">
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  var likeCount = 0;
+  var likeButton = document.getElementById("like-count");
+  var isLiked = false;
+
+  likeButton.addEventListener("click", function() {
+    if (isLiked) {
+      likeCount--;
+      likeButton.classList.remove("liked");
+    } else {
+      likeCount++;
+      likeButton.classList.add("liked");
+    }
+
+    likeButton.innerHTML = '<i class="fa fa-heart"></i> ' + likeCount;
+    isLiked = !isLiked;
+  });
+</script>
+<script>
+  $(document).ready(function(){
+    $('.anime-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      autoplay: true, // adaugă autoplay
+      autoplayTimeout: 5000, // setează timeout-ul pentru autoplay la 5 secunde
+      responsive:{
+        0:{
+          items:1
+        },
+        600:{
+          items:3
+        },
+        1000:{
+          items:5
+        }
+      },
+      navText: [ // adaugă butoanele prev și next
+        "<i class='fa fa-chevron-left'></i>",
+        "<i class='fa fa-chevron-right'></i>"
+      ]
+    });
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
