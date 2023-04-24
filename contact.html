@@ -3,9 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>AnimeAZU Fansub</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/staff.css">
   <!-- CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
@@ -30,7 +29,7 @@
             <a class="nav-link active" aria-current="page" href="#">Acasa</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Lista Anime</a>
+            <a class="nav-link" href="list-anime.html">Lista Anime</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Echipa</a>
@@ -42,6 +41,12 @@
       </div>
     </div>
   </nav>
+  <div class="profile">
+    <a href="#" class="profile-link">
+      <i class="fa fa-user"></i>
+      <span class="profile-text">Autentificare</span>
+    </a>
+  </div>
   <div class="welcome-text">
     <h1>Bun venit!</h1>
     <p>Vizionează orice anime dorești cu subtitrare în limba română!</p>
@@ -58,56 +63,25 @@
 
   </div>
 </div>
-<div class="container-fluid">
+<div class="container">
   <div class="row">
     <div class="col-md-6 offset-md-3">
-      <h1 class="text-center mb-5 translation-team">Membrii echipei</h1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-3">
-      <div class="card translation-card">
-        <img src="https://cdnb.artstation.com/p/assets/images/images/041/540/441/large/tr-n-thien-d-vu-799eb5de-173a-4c07-98a1-a585e9fe042f.jpg?1631985985" alt="John Doe" class="card-img-top">
-        <div class="card-body">
-          <h3 class="card-title mb-4">Romanian Ninja</h3>
-          <p class="card-text"><strong>Functii:</strong> Traducator</p>
-          <p class="card-text"><strong>Puncte:</strong> 1000</p>
-          <span class="badge badge-crunchyroll">TOP 1</span>
+      <h1 class="text-center mb-5 translation-team">Raporteaza episodul</h1>
+      <form>
+        <div class="form-group">
+          <label for="name">Nume</label>
+          <input type="text" class="form-control" id="name" placeholder="Introdu numele anime-ului">
         </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card translation-card">
-        <img src="https://cdnb.artstation.com/p/assets/images/images/041/540/441/large/tr-n-thien-d-vu-799eb5de-173a-4c07-98a1-a585e9fe042f.jpg?1631985985" alt="Jane Smith" class="card-img-top">
-        <div class="card-body">
-          <h3 class="card-title mb-4">Siliv</h3>
-          <p class="card-text"><strong>Functii:</strong> Traducator</p>
-          <p class="card-text"><strong>Puncte:</strong> 800</p>
-          <span class="badge badge-crunchyroll">TOP 2</span>
+        <div class="form-group">
+          <label for="anime">Denumirea anime-ului</label>
+          <input type="text" class="form-control" id="anime" placeholder="Introdu numele anime-ului">
         </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card translation-card">
-        <img src="https://cdnb.artstation.com/p/assets/images/images/041/540/441/large/tr-n-thien-d-vu-799eb5de-173a-4c07-98a1-a585e9fe042f.jpg?1631985985" alt="Bob Johnson" class="card-img-top">
-        <div class="card-body">
-          <h3 class="card-title mb-4">Deus21</h3>
-          <p class="card-text"><strong>Functii:</strong> Traducator</p>
-          <p class="card-text"><strong>Puncte:</strong> 500</p>
-          <span class="badge badge-crunchyroll">TOP 3</span>
+        <div class="form-group">
+          <label for="message">Raportul</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Introdu ce nu functioneaza la episod"></textarea>
         </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card translation-card">
-        <img src="https://cdnb.artstation.com/p/assets/images/images/041/540/441/large/tr-n-thien-d-vu-799eb5de-173a-4c07-98a1-a585e9fe042f.jpg?1631985985" alt="Emily Chen" class="card-img-top">
-        <div class="card-body">
-          <h3 class="card-title mb-4">Dumy</h3>
-          <p class="card-text"><strong>Functii:</strong> Traducator</p>
-          <p class="card-text"><strong>Puncte:</strong> 300</p>
-          <span class="badge badge-crunchyroll">TOP 4</span>
-        </div>
-      </div>
+        <button type="submit" class="btn btn-primary btn-block">Trimite</button>
+      </form>
     </div>
   </div>
 </div>
