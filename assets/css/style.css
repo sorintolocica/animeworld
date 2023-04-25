@@ -421,3 +421,40 @@ p {
 label {
     color: #fff;
 }
+
+/* Stilizare pentru rezultatele căutării */
+#search-results {
+    margin-top: 50px;
+}
+#search-results h2 {
+    margin-bottom: 20px;
+}
+.list-group-item {
+    background-color: #363f5b !important;
+    color: #FFFFFF;
+}
+.list-group-item a {
+    color: #ffffff;
+}
+.list-group-item a:hover {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.anime-image {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.white-text {
+    color: white;
+}
+
+.anime-title {
+    color: white;
+}
+
+.anime-description {
+    color: white;
+}
